@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/main-styles.css">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- Main landmark for primary content -->
+  <main>
+    <div class="card-container">
+      <div class="card-image">
+        <svg class="desktop-img" xmlns="http://www.w3.org/2000/svg" width="336" height="201" fill="none" viewBox="0 0 336 201"><g clip-path="url(#a)"><path fill="#F4D04E" d="M0 .5h336v200H0z"/><rect width="139" height="95" x="87.996" y="77.729" fill="#fff" rx="47.5" transform="rotate(-45 87.996 77.729)"/><rect width="139" height="95" x="54.055" y="77.729" fill="#111" rx="47.5" transform="rotate(-45 54.055 77.729)"/><path fill="#111" d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"/><rect width="139" height="95" x="20.114" y="77.729" fill="#fff" rx="47.5" transform="rotate(-45 20.114 77.729)"/><rect width="204.19" height="270.554" fill="#111" rx="102.095" transform="scale(-1 1) rotate(45 -103.887 14.564)"/><path stroke="#fff" stroke-width="3" d="m6.69-357.5 135.583 135.727c12.481 12.494 12.481 32.737 0 45.231L-45.544 11.475c-12.481 12.494-12.481 32.737 0 45.23L107.088 209.5"/><path stroke="#111" stroke-width="3" d="M69.965 71.719v23.334h23.334M136.079 52.273V28.94h-23.334M102.845 38.838v46.67M210.364-37.5l60.873 60.873c12.497 12.496 12.497 32.758 0 45.254l-77.745 77.746c-12.497 12.496-12.497 32.758 0 45.254l69.872 69.873"/><path stroke="#111" stroke-width="3" d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.144"/><path stroke="#fff" stroke-width="5" d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"/><mask id="b" width="285" height="285" x="234" y="-8" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#111" d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"/></mask><g stroke="#fff" mask="url(#b)"><path stroke-width="3" d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.145"/><path stroke-width="5" d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"/></g></g><defs><clipPath id="a"><path fill="#fff" d="M0 .5h336v200H0z"/></clipPath></defs></svg>
+        <svg class="mob-img" width="279" height="200" viewBox="0 0 279 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_63_132)">
+        <rect width="279" height="200" rx="10" fill="#F4D04E"/>
+        <rect x="59.9962" y="77.229" width="139" height="95" rx="47.5" transform="rotate(-45 59.9962 77.229)" fill="white"/>
+        <rect x="26.0551" y="77.229" width="139" height="95" rx="47.5" transform="rotate(-45 26.0551 77.229)" fill="#111111"/>
+        <rect x="206.864" y="208.536" width="306.228" height="95" transform="rotate(-45 206.864 208.536)" fill="#111111"/>
+        <rect x="-7.88605" y="77.229" width="139" height="95" rx="47.5" transform="rotate(-45 -7.88605 77.229)" fill="white"/>
+        <rect width="204.19" height="270.554" rx="102.095" transform="matrix(-0.707107 0.707107 0.707107 0.707107 -7.87073 77.2252)" fill="#111111"/>
+        <path d="M-21.3104 -358L114.273 -222.273C126.754 -209.779 126.754 -189.536 114.273 -177.042L-73.5442 10.9749C-86.025 23.4689 -86.025 43.7117 -73.5442 56.2057L79.0879 209" stroke="white" stroke-width="3"/>
+        <path d="M41.965 71.2186V94.5532H65.2995" stroke="#111111" stroke-width="3"/>
+        <path d="M108.08 51.7732L108.08 28.4387L84.745 28.4387" stroke="#111111" stroke-width="3"/>
+        <path d="M74.8454 38.3382V85.0072" stroke="#111111" stroke-width="3"/>
+        <path d="M182.364 -38L243.237 22.8726C255.734 35.3694 255.734 55.6306 243.237 68.1274L165.492 145.873C152.995 158.369 152.995 178.631 165.492 191.127L235.364 261" stroke="#111111" stroke-width="3"/>
+        <path d="M225.339 149.074L213.195 161.219L227.451 175.476V188.148H240.124L253.853 201.877L265.998 189.732" stroke="#111111" stroke-width="3"/>
+        <path d="M250.685 123.728L238.54 135.873L252.797 150.13V162.803H265.47L279.199 176.532L291.344 164.387" stroke="#111111" stroke-width="3"/>
+        <path d="M276.031 98.3826L263.886 110.527L278.143 124.784V137.457H290.816L304.545 151.186L316.689 139.041" stroke="#111111" stroke-width="3"/>
+        <mask id="mask0_63_132" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="206" y="-8" width="285" height="284">
+        <rect x="206.864" y="208.536" width="306.228" height="95" transform="rotate(-45 206.864 208.536)" fill="#111111"/>
+        </mask>
+        <g mask="url(#mask0_63_132)">
+        <path d="M225.339 149.074L213.195 161.219L227.451 175.476V188.148H240.124L253.853 201.877L265.998 189.732" stroke="white" stroke-width="3"/>
+        <path d="M250.685 123.728L238.54 135.873L252.797 150.13V162.803H265.47L279.199 176.532L291.344 164.387" stroke="white" stroke-width="3"/>
+        <path d="M276.031 98.3826L263.886 110.527L278.143 124.784V137.457H290.816L304.545 151.186L316.689 139.041" stroke="white" stroke-width="3"/>
+        </g>
+        </g>
+        <defs>
+        <clipPath id="clip0_63_132">
+        <rect width="279" height="200" rx="10" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>
+      </div>
+      <article class="card-content">
+        <div class="card-tag">
+          Learning
+        </div>
+        <div class="card-date">
+          Published 21 Dec 2023
+        </div>
+        <h1 class="card-title">
+          <a href="#">HTML & CSS foundations</a>
+        </h1>
+        <div class="card-description">
+          These languages are the backbone of every website, defining structure, content, and presentation.
+        </div>
+      </article>
+      
+      <section class="card-author" aria-labelledby="author-title">
+        <img class="avatar" src="assets/images/image-avatar.webp" alt="user avatar">
+        <h2 class="name" id="author-title">Greg Hooper</h2>
+      </section>
+      
+    </div>
+  </main>
+  <!-- Footer landmark for footer content -->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Sam Lucchese</a>.
+    </div>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,180 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* 9. Create a root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/Figtree-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  background: #F4D04E;
+  justify-content: center;
+}
+body main {
+  margin: auto;
+}
+body .card-container {
+  max-width: 384px;
+  padding: 24px;
+  background: white;
+  border-radius: 20px;
+  position: relative;
+  border: 1px solid #111111;
+  font-family: "Figtree", sans-serif;
+  color: #111111;
+  left: -3px;
+}
+@media screen and (max-width: 641px) {
+  body .card-container {
+    max-width: 327px;
+  }
+}
+body .card-container:after {
+  content: "";
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  background-color: #111111;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  display: block;
+  z-index: -1;
+}
+body .card-container .card-image {
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .card-container .card-image svg.desktop-img {
+  display: block;
+}
+body .card-container .card-image svg.mob-img {
+  display: none;
+}
+@media screen and (max-width: 641px) {
+  body .card-container .card-image svg.desktop-img {
+    display: none;
+  }
+  body .card-container .card-image svg.mob-img {
+    display: block;
+  }
+}
+body .card-container .card-content {
+  margin: 24px auto;
+}
+body .card-container .card-content .card-tag {
+  padding: 4px 12px;
+  background: #F4D04E;
+  font-weight: 800;
+  font-size: 14px;
+  width: fit-content;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  line-height: 150%;
+}
+@media screen and (max-width: 641px) {
+  body .card-container .card-content .card-tag {
+    font-size: 12px;
+  }
+}
+body .card-container .card-content .card-date {
+  line-height: 150%;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 641px) {
+  body .card-container .card-content .card-date {
+    font-size: 12px;
+  }
+}
+body .card-container .card-content .card-title {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 150%;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 641px) {
+  body .card-container .card-content .card-title {
+    font-size: 20px;
+  }
+}
+body .card-container .card-content .card-title a {
+  text-decoration: none;
+  color: #111111;
+  transition: color 0.35s ease;
+}
+body .card-container .card-content .card-title a:hover, body .card-container .card-content .card-title a:focus, body .card-container .card-content .card-title a:active {
+  color: #F4D04E;
+}
+body .card-container .card-content .card-description {
+  color: #6b6b6b;
+}
+@media screen and (max-width: 641px) {
+  body .card-container .card-content .card-description {
+    font-size: 14px;
+  }
+}
+body .card-container .card-author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+body .card-container .card-author .avatar {
+  height: 32px;
+  width: 32px;
+}
+body .card-container .card-author .name {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
+}
