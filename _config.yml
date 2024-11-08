@@ -1,0 +1,11 @@
+# _config.yml
+# this file allows me to use github pages with the node modules inside of the subdirectories
+
+exclude:
+  - node_modules
+  - vendor
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - blog-preview-card/node_modules  # Adjust path as needed
+  - qr-code-component/node_modules  # Adjust path as needed
